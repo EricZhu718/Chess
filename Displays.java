@@ -1,0 +1,220 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Rectangle;
+import java.awt.Shape;
+import java.awt.image.ImageObserver;
+import java.text.AttributedCharacterIterator;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.util.*;
+public class Displays extends Graphics{
+	JFrame testing = new JFrame();
+	MouseStuff a = new MouseStuff();
+	ImageIcon Picture = new ImageIcon("promo_5.png");
+	JLabel something = new JLabel(Picture);
+	public static void main(String[] args) {
+		new Displays();
+	}
+	Displays() {
+		//testing.createImage(100, 100);
+		testing.setSize(500, 500);
+		testing.setVisible(true);
+		testing.addMouseListener(a);
+		testing.addMouseMotionListener(a);
+		testing.add(something);
+		testing.setPreferredSize(new Dimension(700, 700));
+		something.setBounds(0,0,something.getHeight(), something.getWidth());
+		testing.pack();
+		//testing.remove(something);
+	}
+	public void remove() {
+		testing.remove(something);
+	}
+	@Override
+	public void clearRect(int arg0, int arg1, int arg2, int arg3) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void clipRect(int arg0, int arg1, int arg2, int arg3) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void copyArea(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public Graphics create() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void dispose() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void drawArc(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public boolean drawImage(Image arg0, int arg1, int arg2, ImageObserver arg3) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public boolean drawImage(Image arg0, int arg1, int arg2, Color arg3, ImageObserver arg4) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public boolean drawImage(Image arg0, int arg1, int arg2, int arg3, int arg4, ImageObserver arg5) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public boolean drawImage(Image arg0, int arg1, int arg2, int arg3, int arg4, Color arg5, ImageObserver arg6) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public boolean drawImage(Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8,
+			ImageObserver arg9) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public boolean drawImage(Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8,
+			Color arg9, ImageObserver arg10) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void drawLine(int arg0, int arg1, int arg2, int arg3) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void drawOval(int arg0, int arg1, int arg2, int arg3) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void drawPolygon(int[] arg0, int[] arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void drawPolyline(int[] arg0, int[] arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void drawRoundRect(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void drawString(String arg0, int arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void drawString(AttributedCharacterIterator iterator, int x, int y) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void fillArc(int x, int y, int width, int height, int startAngle, int arcAngle) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void fillOval(int x, int y, int width, int height) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void fillPolygon(int[] xPoints, int[] yPoints, int nPoints) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void fillRect(int x, int y, int width, int height) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void fillRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public Shape getClip() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Rectangle getClipBounds() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Color getColor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Font getFont() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public FontMetrics getFontMetrics(Font f) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setClip(Shape clip) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void setClip(int x, int y, int width, int height) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void setColor(Color c) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void setFont(Font font) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void setPaintMode() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void setXORMode(Color c1) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void translate(int x, int y) {
+		// TODO Auto-generated method stub
+		
+	}
+}
